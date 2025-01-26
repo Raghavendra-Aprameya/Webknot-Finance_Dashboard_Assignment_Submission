@@ -118,68 +118,68 @@ li {
 }
 @media (max-width: 1024px) {
   .Left-Component {
-    width: 200px; /* Reduce sidebar width */
+    width: 200px; 
   }
 
   .cardGrid {
-    grid-template-columns: 1fr; /* Single column for cards */
+    grid-template-columns: 1fr; 
   }
 
   .ChartContainer {
-    flex-direction: column; /* Stack charts vertically */
+    flex-direction: column; 
   }
 
   .SingleChart,
   .DoubleChart {
-    margin-bottom: 20px; /* Add spacing between charts */
+    margin-bottom: 20px; 
   }
 }
 
-/* Small Screens (Mobile Devices) */
+
 @media (max-width: 768px) {
   body {
-    flex-direction: column; /* Stack sidebar and content vertically */
+    flex-direction: column; 
   }
 
   .Left-Component {
-    width: 100%; /* Sidebar takes full width */
-    height: auto; /* Allow it to collapse */
+    width: 100%; 
+    height: auto; 
   }
 
   nav {
-    flex-direction: column; /* Stack search bar and utils */
+    flex-direction: column; 
     align-items: stretch;
   }
 
   .searchBar {
-    margin-bottom: 15px; /* Add space below search bar */
+    margin-bottom: 15px; 
   }
 
   .utils {
-    justify-content: center; /* Center the utils icons */
+    justify-content: center; 
   }
 
   .cardGrid {
-    grid-template-columns: 1fr; /* Single column for cards */
+    grid-template-columns: 1fr; 
     grid-gap: 20px;
   }
 
   .ChartContainer {
-    flex-direction: column; /* Stack charts vertically */
+    flex-direction: column; 
     gap: 20px;
   }
 
   .profile {
     width: 40px;
-    height: 40px; /* Smaller profile image */
+    height: 40px; 
   }
 
   .card {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px; 
   }
 
   .price {
-    font-size: 24px; /* Adjust text size for smaller screens */
+    font-size: 24px; 
   }
 
   .cardTitle {
@@ -187,29 +187,29 @@ li {
   }
 }
 
-/* Extra Small Screens (Phones) */
+
 @media (max-width: 480px) {
   .Left-Component {
-    display: none; /* Hide sidebar for very small screens */
+    display: none; 
   }
 
   .cardGrid {
-    grid-gap: 15px; /* Reduce gap between cards */
+    grid-gap: 15px; 
   }
 
   .price {
-    font-size: 20px; /* Further reduce font size */
+    font-size: 20px; 
   }
 
   .cardTitle {
     font-size: 12px;
   }
   .ChartContainer {
-    gap: 15px; /* Reduce gap for better fitting on small screens */
+    gap: 15px; 
   }
 
   .SingleChart,
   .DoubleChart {
-    width: 100%; /* Full width for charts */
+    width: 100%; 
   }
 }
