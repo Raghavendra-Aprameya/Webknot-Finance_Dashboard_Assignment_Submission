@@ -1,0 +1,215 @@
+/* *
+{
+  padding:0;
+  margin:0;
+} */
+
+* {
+  background-color: #ededf6;
+}
+.Left-Component {
+  width: 250px;
+  height: 100vh;
+}
+body {
+  display: flex;
+}
+.searchBar {
+  border-radius: 30px;
+  border: 2px solid black;
+  outline: none;
+  padding: 15px;
+  display: flex;
+  border: none;
+  width: 400px;
+}
+.searchInput {
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+.trial {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+}
+.profile {
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  background-color: inherit;
+}
+.card {
+  color: white;
+  border-radius: 10px;
+  padding: 13px;
+}
+.card:nth-child(1) {
+  background-color: blue;
+}
+.card:nth-child(2) {
+  background-color: #4894ea;
+}
+.card:nth-child(3) {
+  background-color: #ab88cf;
+}
+.card:nth-child(4) {
+  background-color: #2a9d8f;
+}
+.ChartContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 30px;
+  background-color: white;
+}
+.doubleChart {
+  margin-left: 30px;
+}
+#CompanyLogo {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+}
+li {
+  padding: 5px;
+}
+.card p {
+  background-color: inherit;
+  font-weight: bold;
+}
+.price {
+  font-size: 30px;
+}
+.cardTitle {
+  font-size: 15px;
+}
+.utils {
+  background-color: #f9f9f9;
+}
+.utils img {
+  margin-right: 15px;
+}
+
+.utils img:last-child {
+  margin-right: 0;
+}
+.DoubleChart {
+  background-color: white;
+  padding: 13px;
+}
+.SingleChart {
+}
+@media (max-width: 1024px) {
+  .Left-Component {
+    width: 200px; /* Reduce sidebar width */
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr; /* Single column for cards */
+  }
+
+  .ChartContainer {
+    flex-direction: column; /* Stack charts vertically */
+  }
+
+  .SingleChart,
+  .DoubleChart {
+    margin-bottom: 20px; /* Add spacing between charts */
+  }
+}
+
+/* Small Screens (Mobile Devices) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  .Left-Component {
+    width: 100%; /* Sidebar takes full width */
+    height: auto; /* Allow it to collapse */
+  }
+
+  nav {
+    flex-direction: column; /* Stack search bar and utils */
+    align-items: stretch;
+  }
+
+  .searchBar {
+    margin-bottom: 15px; /* Add space below search bar */
+  }
+
+  .utils {
+    justify-content: center; /* Center the utils icons */
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr; /* Single column for cards */
+    grid-gap: 20px;
+  }
+
+  .ChartContainer {
+    flex-direction: column; /* Stack charts vertically */
+    gap: 20px;
+  }
+
+  .profile {
+    width: 40px;
+    height: 40px; /* Smaller profile image */
+  }
+
+  .card {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .price {
+    font-size: 24px; /* Adjust text size for smaller screens */
+  }
+
+  .cardTitle {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+  .Left-Component {
+    display: none; /* Hide sidebar for very small screens */
+  }
+
+  .cardGrid {
+    grid-gap: 15px; /* Reduce gap between cards */
+  }
+
+  .price {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .cardTitle {
+    font-size: 12px;
+  }
+  .ChartContainer {
+    gap: 15px; /* Reduce gap for better fitting on small screens */
+  }
+
+  .SingleChart,
+  .DoubleChart {
+    width: 100%; /* Full width for charts */
+  }
+}
